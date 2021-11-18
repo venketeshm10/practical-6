@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Div Tag</title>
+        <h1 style="text-decoration: underline; margin: 40px;color: white;">Practical 6: Create a Card Layout using CSS layout properties.</h1>
+        <style>
+            *{padding: 0; margin: 0; box-sizing: border-box;}
+            #container{
+                display: inline-flex;
+                margin: 50px;
+            }
+            .box
+            {
+               width: 300px; 
+               height: 400px;
+               overflow: hidden;
+               border: 2px solid white;
+               margin-bottom: 10px;
+               text-align: justify;
+               padding: 20px;
+               margin: 20px;
+            }
+            #b1{
+                background-color: cyan;
+                border-radius: 20px;
+            }
+            #b2{
+                background-color: cyan;
+                border-radius: 20px;
+            }
+            #b3{
+                background-color: cyan;
+                border-radius: 20px;
+            }
+
+            .box img
+            {
+                width: 100%;
+                height: 100px;
+                border-radius: 20px;
+            }
+            .box h2
+            {
+                text-align: center;
+                margin: 10px;
+            }
+            .mybutton
+            {
+                display: block;
+                margin-top: 10px;
+                text-decoration: none;
+                color: white;
+                font-family: arial;
+                background-color: red;
+                padding: 10px 20px;
+                border-radius: 20px;
+            }
+            .mybutton:hover
+            {
+                background-color: green;
+            }
+        </style>
+    </head>
+    <body style="background-color: rgb(153, 153, 255); text-align: center; margin-top: 20px;">
+    <div id="container">
+    <div class="box" id="b1">
+        <div class="image-heading">
+            <img src="./images/JS.jpg" alt="">
+        </div>
+        <h2>Introduction to JavaScript</h2>
+        <p>
+            JavaScript is a client-side scripting language of web developed by Netscape in 1995 with the name 
+        LiveScript.
+        </p>
+        <div class="image" style="text-align: center;">
+        <a href="./intro/js.html" class="mybutton">Read More</a>
+        </div>
+    </div>
+    <div class="box" id="b2">
+        <div class="image-heading">
+            <img src="./images/css.jpg" alt="">
+        </div>
+        <h2>Introduction to CSS</h2>
+        <p>
+            CSS is short for Cascading Style Sheets, and is the preferred way for setting the 
+        look and feel of a website. Cascading Style Sheets (CSS) is a markup language responsible for 
+        how your web pages will look like.
+        </p>
+        <div class="image" style="text-align: center;">
+            <a href="./intro/css.html" class="mybutton">Read More</a>
+            </div>
+    </div>
+    <div class="box" id="b3">
+        <div class="image-heading">
+            <img src="./images/bootstrap-1.jpg" alt="">
+        </div>
+        <h2>Introduction to BootStrap</h2>
+        <p>
+            It is an open-source and free CSS framework, which helps in directing a responsive device-friendly 
+        mobile-first front-end web page development tool.
+        </p>
+        <div class="image" style="text-align: center;">
+            <a href="./intro/bootstrap.html" class="mybutton">Read More</a>
+            </div>
+    </div>
+    </div>
+    </body>
+</html>
